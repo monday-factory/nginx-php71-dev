@@ -5,6 +5,7 @@ RUN curl --silent --location https://rpm.nodesource.com/setup_6.x | bash - && \
 	yum install -y nodejs \
     gcc \
     gcc-c++ && \
+    git \
     npm upgrade minimatch && npm upgrade graceful-fs && npm install -g gulp
 
 #Set port
